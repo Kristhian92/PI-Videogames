@@ -1,0 +1,12 @@
+.box_loading {
+  background-size: contain;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.box_loading img {
+  height: 180px;
+  width: 180px;
+  margin-top: 10%;
+}

@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #CC0000;
+}
+
+.box {
+  display: inline;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+}
+
+.box select {
+  background-color: whitesmoke;
+  color: black;
+  padding: 7px;
+  font-size: 16px;
+  appearance: button;
+  outline: none;
+  margin: 10px;
+  font-family: monospace;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box select option {
+  padding: 30px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 6px 10px;
+  text-align: center;
+  margin: 6rem auto;
+  font-size: 1 rem;
+  color: #CC0000;
+  text-decoration: none;
+  background-color: #2b2d42;
+  border-radius: 35px;
+  transition: 0.3s;
+  font-family: system-ui;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+
+.main_card {
+  color: darkred;
+  height: 100%;
+  width: auto;
+  margin: 50px auto;
+  display: flex;
+  max-width: 770px;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #F44336 0%,
+    #ff9a9e 99%,
+    whitesmoke 100%
+  );
+  box-shadow: 0 0 4px rgb(255 240 243), 0 0 8px rgb(255 204 213),
+    0 0 12px rgb(255 179 193), 0 0 16px rgb(255 143 163),
+    0 0 20px rgb(255 117 143), 0 0 24px rgb(255 77 109);
+}
+
+.card_left {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.card_details {
+  width: 90%;
+  padding: 30px;
+  margin-top: -25px;
+}
+
+.nombre {
+  font-size: 30px;
+  font-family: "Playfair Display SC";
+  align-items: center;
+}
+
+.card_right img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.card_right {
+  height: auto;
+  width: 100%;
+}
+
+.card_cat {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-content: space-between;
+  padding-right: 5px;
+}
+
+.rating .genres .fecha {
+  color: #ffcdb2;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 15px;
+  align-items: center;
+  
+}
+
+.rating {
+  background:  #D7CCC8 ;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.description {
+  font-weight: 50;
+  line-height: 15px;
+  font-size: 13px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.plataformas {
+  font-weight: 50;
+  line-height: 15px;
+  font-size: 13px;
+  margin-top: 25px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  border: #fff;
+  padding: 8px;
+  width: 20%;
+  outline: none;
+  font-size: 16px;
+  font-family: system-ui;
+  margin-top: 15px;
+  margin-left: 10px;
+  background: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgb(255 240 243), 0 0 6px rgb(255 204 213),
+    0 0 9px rgb(255 179 193), 0 0 12px rgb(255 143 163),
+    0 0 15px rgb(255 117 143), 0 0 18px rgb(255 77 109);
+}

@@ -1,0 +1,99 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: url("../../imagenes/fondo2.jpg") no-repeat 50% 50%;
+  box-shadow: 0 0 2px whitesmoke, 0 0 4px #EF5350,
+    0 0 6px #F44336, 0 0 8px #F44336,
+    0 0 10px #C62828, 0 0 12px #CC0000;
+}
+
+.opcion {
+  text-align: center;
+  padding: 57px 0px;
+  text-decoration: none;
+  float: left;
+}
+
+.to {
+  color: #fff;
+  text-decoration: none;
+  border: #ffcdb2 solid 1px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 21px;
+  font-family: monospace;
+  box-shadow: 0 0 3px whitesmoke, 0 0 6px #EF5350,
+    0 0 9px #F44336, 0 0 12px #F44336,
+    0 0 15px #C62828, 0 0 18px #CC0000;
+}
+
+.to:hover {
+  background-color: #EF5350;
+}
+
+.to:active {
+  background-color: #EF5350;
+  box-shadow: 0 2px #621708;
+  transform: translateY(2px);
+}
+
+.search {
+  padding: 0;
+  margin: 0 16px;
+}
+
+.gif {
+  display: table-cell;
+  padding-top: 0.5vw;
+  width: 19vw;
+  margin: -34px;
+  height: auto;
+}
+
+.imagencita {
+  justify-content: center;
+  position: relative;
+  margin: 0 40px 0 0;
+  height: auto;
+  width: auto;
+}
+
+.busqueda {
+  padding: 0;
+}
+
+.btn {
+  text-align: center;
+  padding: 57px 0px;
+  text-decoration: none;
+  float: right;
+  color: #fff;
+  text-decoration: none;
+  border: #ffcdb2 solid 1px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 21px;
+  font-family: monospace;
+  box-shadow: 0 0 3px whitesmoke, 0 0 6px #EF5350,
+    0 0 9px #F44336, 0 0 12px #F44336,
+    0 0 15px #C62828, 0 0 18px #CC0000;
+  background: bottom;
+  margin: 50px 10px 0px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #EF5350;
+}
+
+.btn:active {
+  background-color: #EF5350;
+  box-shadow: 0 2px #621708;
+  transform: translateY(2px);
+}
