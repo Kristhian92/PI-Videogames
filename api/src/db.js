@@ -3,17 +3,17 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST, PGPORT, PGDATABASE
+  DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
 } = process.env;
 
 
 let sequelize = process.env.NODE_ENV === 'production'
   // Config para heroku:
   ? new Sequelize({
-    database: PGDATABASE,
+    database: DB_NAME,
     dialect: 'postgres',
     host: DB_HOST,
-    port: PGPORT,
+    port: 5432,
     username: DB_USER,
     password: DB_PASSWORD,
     pool:{
@@ -34,7 +34,7 @@ let sequelize = process.env.NODE_ENV === 'production'
 
   : 
 
-  new Sequelize(`postgresql://${{ DB_USER }}:${{ DB_PASSWORD }}@${{ DB_HOST }}:${{ PGPORT }}/${{ PGDATABASE }}`, {
+  new Sequelize(`postgresql://${ DB_USER }:${ DB_PASSWORD }@${ DB_HOST }/${ DB_NAME }`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
  
