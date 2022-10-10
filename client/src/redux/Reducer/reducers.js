@@ -23,8 +23,8 @@ function rootReducer(state = initialState, action) {
         case GET_ALL_VIDEOGAMES: //para mi home
             return {
                 ...state,
-                videogames: action.payload, //de reserva
-                allVideogames: action.payload
+                allVideogames: action.payload,
+                videogames: action.payload //de reserva
             };
         case GET_NAMES: //para mi searchbar
             return {

@@ -28,7 +28,7 @@ export const getNames = (name) => {
   return async (dispatch) => {
     try {
       const { data } = await axios.get(
-        '/videogames?name=' + name
+        `/videogames?name=${name}`
       );
       return dispatch({
         type: "GET_NAMES",
@@ -47,7 +47,7 @@ export const getNames = (name) => {
 export const getVideogame = (id) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get('/videogame/' + id);
+      const { data } = await axios.get(`/videogame/${id}`);
       return dispatch({
         type: "GET_VIDEOGAME",
         payload: data,
@@ -67,7 +67,7 @@ export const getByGenres = () => {
         payload: data,
       });
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   };
 };
@@ -76,7 +76,7 @@ export const createVideogame = (videogame) => {
   return async (dispatch) => {
     try {
       const { data } = await axios.post(
-        '/videogame',
+        `/videogame`,
         videogame
       );
       return dispatch({
